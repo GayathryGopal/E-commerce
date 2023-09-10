@@ -1,0 +1,30 @@
+{% extends 'staff/staffhome.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-12 col-md-12">
+        <table id="tb2" border="0"  align="center" >
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phno</th>
+                <th>Price</th>
+                
+            </tr>
+            
+            {% for i in x %} 
+            <tr>
+    <td>{{i.4}}</td>
+    <td>{{i.5}}</td>
+    <td>{{i.6}}</td>
+    <td>{{i.3}}</td>
+    
+            </tr>
+            {% endfor %}    
+        </table>
+        
+    
+    </div>
+        </div>
+    </div>
+    {% endblock %}

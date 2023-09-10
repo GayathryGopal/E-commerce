@@ -1,0 +1,21 @@
+{% extends 'admin/adminhome.html' %}
+{% block content %}
+<table id="t1" width="500px" border="0" height="300px" align="center" cellpadding="30px">
+    <tr>
+        <th style="margin: 10px ;">Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Qualification</th>
+    </tr>
+    {% for i in b %} 
+<tr>
+    <td>{{i.1}}</td>
+    <td>{{i.2}}</td>
+    <td>{{i.3}}</td>
+    <td>{{i.4}}</td>
+    <td>{{i.6}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

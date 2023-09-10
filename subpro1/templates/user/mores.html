@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="static/js/pro.js"></script> 
+   
+  
+
+    </script>
+    <link rel="stylesheet" href="static/css/pro.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+   
+<!-- <div class="container-fluid">
+    <div class="row">
+       
+        <div class="col-lg-6 col-md-6">
+            d<img src="static/image/{{c.9}}" class="samll-img" alt="">
+            <img src="static/image/{{c.10}}" class="samll-img" alt="">
+            <img src="static/image/{{c.11}}" class="samll-img" alt="">
+<img src="static/image/{{c.6}}" id="productimg" alt="">
+            
+            </div>
+            <div class="col-lg-6 col-md-6"> 
+                <h2 id="d">Details</h2>
+                <h5 id="k">Name:{{c.1}}</h5>
+                <!-- <h5 id="f">Fabric:{{c.2}}</h5> -->
+                
+                    <div class="container-fluid">
+                        <div class="row">
+                           
+                    <div class="col-lg-6 col-md-6">
+                    <img src="static/image/{{c.6}}"height="100px" width="80px" alt="" id="img6"
+                    onmouseover="mouseover()" onmouseout="mouseout()" >
+                    
+                    <img src="static/image/{{c.9}}" height="100px" width="80px" alt="" id="img7"
+                    onmouseover="mouseover1()" onmouseout="mouseout()" >
+                    
+                    <img src="static/image/{{c.10}}" height="100px" width="80px" alt="" id="img8"
+                    onmouseover="mouseover2()" onmouseout="mouseout()" >
+                    
+                    <img src="static/image/{{c.11}}" height="100px" width="80px" alt="" id="img9"
+                    onmouseover="mouseover3()" onmouseout="mouseout()" >
+                </div> 
+                <div class="col-lg-6 col-md-6"> 
+                    <h3 id="d">Details</h3>
+                    <h5 id="k">Name:{{c.1}}</h5>
+                <button id="show" onclick="msg()">BUYNOW</button>
+               
+       <div id="content"> 
+        
+       
+        <form method="post" enctype="multipart/form-data" >
+            {% csrf_token %}
+            <table border="0" width="400px" height="400px">
+               <tr>
+               <th>
+                Product Id</th>
+                <td><input type="text"  name="id" value="{{c.8}}" readonly=""></td>
+               </tr>
+                   
+                    <tr>
+                        <th>Name</th>
+                        <td><input type="text" name="n">
+                        </td>
+            
+                    </tr>
+                   
+                    <tr>
+                        <th>Address</th>
+                        <td><input type="text" name="ad" ></td>
+                        
+                    </tr>
+                   
+                    <tr>
+                        <th>Phno</th>
+                        <td><input type="number" name="ph" ></td>
+                    </tr>
+                    
+                    
+                        
+                        <tr>
+                            <th>Price</th>
+                            <td><input type="text" name="pc" value="{{c.7}}" readonly=""></td>
+                        </tr>
+                    
+                        <td colspan="2" align="center"><input type="submit" name="sub" value="SUBMIT"></td>
+
+                      
+                       </tr>
+                </table>
+           
+        </form>
+     
+        </div>
+            </div>
+    </div>
+                    </div>
+
+</body>
+</html>

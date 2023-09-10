@@ -1,0 +1,68 @@
+{% extends 'home.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+    <img src="static/image/2feeec_e90900db61404ab1979fb5e6f9a54b85_mv2.webp" width="550px"  id="im1" alt="">
+    </div>
+    <div class="col-lg-6 col-md-6">
+<form method="post" >
+    {% csrf_token %}
+    <table cellpadding="12px">
+        <tr>
+            <th>Name</th>
+            <td><input type="text" name="n">
+            </td>
+
+        </tr>
+       
+        <tr>
+            <th>Age</th>
+            <td><input type="text" name="a"></td>
+            
+        </tr>
+       
+        <tr>
+            <th>Address</th>
+            <td><input type="text" name="ad"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+        <td><input type="radio" value="male" name="gen">Male
+            <input type="radio" value="female" name="gen">Female</td>
+        </tr>
+        
+            <tr>
+                <th>Qualification</th>
+                <td>
+                <input type="checkbox" value="sslc" name="qualification">Sslc
+               
+                <input type="checkbox" value="hsc" name="qualification">Hsc
+                
+                <input type="checkbox" value="ug" name="qualification">Ug
+              
+                <input type="checkbox" value="pg" name="qualification">Pg
+               
+                </td>
+            </tr>
+            <tr>
+                <th>Phno</th>
+                <td><input type="number" name="ph"></td>
+            </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="text" name="em"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="password" name="ps"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="sub" value="SUBMIT"></td>
+           </tr>
+    </table>
+</form>
+    </div>
+</div>
+</div>
+{% endblock %}

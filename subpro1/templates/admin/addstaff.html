@@ -1,0 +1,66 @@
+{% extends 'admin/adminhome.html' %}
+{% block content %}
+  <form method="post" id="fm1">
+    {% csrf_token %}
+    <table cellpadding="10px">
+        <tr>
+            <th>Name</th>
+            <td><input type="text" name="n">
+            </td>
+
+        </tr>
+       
+        <tr>
+            <th>Age</th>
+            <td><input type="text" name="a"></td>
+            
+        </tr>
+       
+        <tr>
+            <th>Address</th>
+            <td><input type="text" name="ad"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+        <td><input type="radio" value="male" name="gen">Male
+            <input type="radio" value="female" name="gen">Female</td>
+        </tr>
+        <tr>
+            <th>Staff Type</th>
+           
+            <td><select name="stype">
+            <option >Office staff</option>
+                <option >Delivery boy</option>
+            </select></td>
+        </tr>
+            <tr>
+                <th>Qualification</th>
+                <td>
+                <input type="checkbox" value="sslc" name="qualification">Sslc
+               
+                <input type="checkbox" value="hsc" name="qualification">Hsc
+                
+                <input type="checkbox" value="ug" name="qualification">Ug
+              
+                <input type="checkbox" value="pg" name="qualification">Pg
+               
+                </td>
+            </tr>
+            <tr>
+                <th>Phno</th>
+                <td><input type="number" name="ph"></td>
+            </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="text" name="em"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="password" name="ps"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="sub" value="SUBMIT"></td>
+           </tr>
+    </table>
+</form> 
+{% endblock %}

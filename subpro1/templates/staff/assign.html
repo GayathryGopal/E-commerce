@@ -1,0 +1,16 @@
+{% extends 'staff/staffhome.html' %}
+{% block content %}
+<form method="post" >
+{% csrf_token %}
+Choose a Deliveryboy:<select name="stype">
+    <option value="none">Choose </option>
+    {% for i in h %}
+<option value="{{i.8}}">{{i.1}}</option>
+
+    
+    {% endfor %}
+</select>
+<input type="submit" name="sub" value="ASSIGN">
+</form>
+
+{% endblock %}

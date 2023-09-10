@@ -1,0 +1,64 @@
+{% extends 'staff/staffhome.html' %}
+{% block content %}
+  <form method="post" enctype="multipart/form-data" id="fm">
+    {% csrf_token %}
+    <table cellpadding="15">
+        <tr>
+            <th>Id</th>
+            <td><input type="text" name="id"></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td><input type="text" name="n">
+            </td>
+
+        </tr>
+       
+        <tr>
+            <th>Fabric</th>
+            <td><input type="text" name="fb"></td>
+            
+        </tr>
+       
+        <tr>
+            <th>Pattern</th>
+            <td><input type="text" name="p"></td>
+        </tr>
+        <tr>
+            <th>Sizes</th>
+        <td><input type="text" name="s"></td>
+        </tr>
+        <tr>
+            <th>Country for Orgin</th>
+            <td><input type="text" name="co"></td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><input type="file" name="im"></td>
+        </tr>
+        <tr>
+            <th>Image1</th>
+            <td><input type="file" name="im1"></td>
+        </tr>
+        <tr>
+            <th>Image2</th>
+            <td><input type="file" name="im2"></td>
+        </tr>
+        <tr>
+            <th>Image3</th>
+            <td><input type="file" name="im3"></td>
+        </tr>
+
+
+
+            
+            <tr>
+                <th>Price</th>
+                <td><input type="text" name="pc"></td>
+            </tr>
+        
+            <td colspan="2" align="center"><input type="submit" name="sub" value="SUBMIT"></td>
+           </tr>
+    </table>
+</form> 
+{% endblock %}

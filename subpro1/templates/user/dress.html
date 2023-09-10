@@ -1,0 +1,22 @@
+{% extends 'user/userhome.html' %}
+    {% block content %}
+        <div class="container-fluid">
+            <div class="row">
+                {% for i in b%}
+                <div class="col-lg-4 col-md-4">
+                    <a href="/tmore?tid={{i.8}}"> 
+                    <div><img src="static/image/{{i.6}}" id="img3"  alt=""></div>
+                    
+                    <div id="a2" > {{i.1}}</div>
+                    <div id="a3">{{i.7}}</div></a>
+                    
+        
+            </div>
+        
+                {% endfor %}
+                
+            </div>
+        </div>
+    {% endblock %}
+    </body>
+    </html>  
